@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asgn 5- MATH EXPRESSIONS</title>
+</head>
+<body>
+    <script>
+
+
+// 1. Write a program that take two numbers & add them in a
+// new variable. Show the result in your browser.
+
+
+// Ans 1.
+var a = 3;
+var b = 5;
+var c = a + b;
+
+document.write("Answer 1 : Sum of " + a + " and " + b + " is " + c + "<br> <br> <br>")
+
+
+
+
+
+
+// 2. Repeat task1 for subtraction, multiplication, division &
+// modulus.
+
+
+// Ans 2.
+var a = 3;
+var b = 5;
+var d = a * b;
+var e = a - b;
+var f = a / b;
+var g = a % b;
+
+document.write("Answer 2 : Multiply of " + a + " and " + b + " is " + d + "<br>")
+document.write("Answer 2 : Subtraction of " + a + " and " + b + " is " + e + "<br>")
+document.write("Answer 2 : Division of " + a + " and " + b + " is " + f + "<br>")
+document.write("Answer 2 : Modulus of " + a + " and " + b + " is " + g + "<br><br> <br>")
+
+
+
+
+
+
+// 3. Do the following using JS Mathematic Expressions
+// a. Declare a variable.
+// b. Show the value of variable in your browser like “Value
+// after variable declaration is: ??”.
+// c. Initialize the variable with some number.
+// d. Show the value of variable in your browser like “Initial
+// value: 5”.
+// e. Increment the variable.
+// f. Show the value of variable in your browser like “Value
+// after increment is: 6”.
+// g. Add 7 to the variable.
+// h. Show the value of variable in your browser like “Value after addition is: 13”.
+// i. Decrement the variable.
+// j. Show the value of variable in your browser like “Value
+// after decrement is: 12”.
+// k. Show the remainder after dividing the variable’s value
+// by 3.
+// l. Output : “The remainder is : 0”.
+
+
+
+// Ans. 3
+var val ;
+document.write("Value after variable declaration is: " + val + "<br>");
+val = 5;
+document.write("Initial Value: " + val + "<br>");
+val++;
+document.write("Value after increment is: " + val + "<br>");
+val += 7;
+document.write("Value after addition is: " + val + "<br>");
+val--;
+document.write("Value after decrement is: " + val + "<br>");
+val %= 3;
+document.write("Answer 3 : The remainder is: " + val + "<br> <br> <br>");
+
+
+
+
+
+
+
+// 4. Cost of one movie ticket is 600 PKR. Write a script to
+// store
+// ticket price in a variable & calculate the cost of buying 5
+// tickets
+// to a movie. Example output:
+
+// Ans 4.
+var ticket = 600;
+ var cost = 5 * ticket;
+ document.write("Answer 4 : Total cost to buy 5 tickets to a movie is "+ cost + " PKR <br> <br> <br>") 
+
+
+
+
+
+
+// 5. Write a script to display multiplication table of any
+// number in your browser. E.g
+
+
+// ans 5.
+document.write("Answer 5: <br>")
+for (var i = 1; i <= 10; i++) {
+    document.write("4 x " + i + " = " + 4 * i + "<br>")
+}
+document.write("<br><br>")
+
+
+
+
+
+// 6. The Temperature Converter: It’s hot out! Let’s make a
+// converter based on the steps here.
+// a. Store a Celsius temperature into a variable.
+// b. Convert it to Fahrenheit & output “NNoC is NNoF”.
+// c. Now store a Fahrenheit temperature into a variable.
+// d. Convert it to Celsius & output “NNoF is NNoC”.
+
+
+
+// Ans 6.
+var celsius = 25;
+var convertF = (celsius * 9/5) + 32;
+document.write("Answer 6: " + celsius + "C is " + convertF + "F <br>")
+var frah = 70;
+var convertc = (frah - 32) * 5/9;
+document.write(frah + "F is " + convertc + "C <br> <br> <br>")
+
+
+
+
+
+
+// 7. Write a program to implement checkout process of a
+// shopping cart system for an e-commerce website. Store
+// the following in variables
+// a. Price of item 1
+// b. Price of item 2
+// c. Ordered quantity of item 1
+// d. Ordered Quantity of item 2
+// e. Shipping charges
+// Compute the total cost & show the receipt in your browser.
+
+
+
+// Ans 7.
+
+var price1 = 110;
+ var price2 = 110;
+ var qty1 = 110;
+ var qty2 = 110;
+ var item1 = price1 * qty1
+ var item2 = price2 * qty2
+ var ship = 30;
+ var sum = item1 + item2 + ship
+ document.write("Answer 7 : cost of total items are " + sum + "<br> <br> <br>")
+
+
+
+
+
+// 8. Store total marks & marks obtained by a student in 2
+// variables. Compute the percentage & show the result in
+// your browser
+
+
+// Ans 8.
+var totalMarks = 100;
+ var obtainMarks = 30;
+ var per = (obtainMarks / totalMarks) * 100;
+ document.write ("Answer 8 : Percentage is " + per + "%" + "<br> <br> <br>")
+
+
+
+
+
+// 9. Assume we have 10 US dollars & 25 Saudi Riyals. Write a
+// script to convert the total currency to Pakistani Rupees.
+// Perform all calculations in a single expression.
+// (Exchange rates : 1 US Dollar = 290 Pakistani Rupee
+// and 1 Saudi Riyal = 75 Pakistani Rupee)
+
+
+
+// ANs 9.
+var US = 10;
+var Riyal = 25;
+var  usToPkr = 290;
+var riyalToPkr = 75;
+var totalCost = (US * usToPkr) + (riyalToPkr * Riyal);
+document.write("Answer 9 : Total cost is " + totalCost + "<br> <br> <br>");
+
+
+
+
+// 10. Write a program to initialize a variable with some
+// number and do arithmetic in following sequence:
+// a. Add 5
+// b. Multiply by 10
+// c. Divide the result by 2
+// Perform all calculations in a single expression
+
+
+
+// // Ans 10.
+var num = 10;
+ num = num + 5;
+ num = num * 10;
+ num = num / 2
+document.write("Answer 10: " + num)
+
+
+
+
+// 11. The Age Calculator: Forgot how old someone is?
+// Calculate it!
+// a. Store the current year in a variable.
+// b. Store their birth year in a variable.
+// c. Calculate their 2 possible ages based on the stored
+// values.
+// Output them to the screen like so: “They are either NN or NN
+// years old”.
+
+
+
+// ANs 11.
+var currentYear = 2023;
+var birthYear = 1999;
+var age = currentYear - birthYear;
+document.write("Answer 11 : They are " + age + " years old " + "<br> <br> <br>");
+
+
+
+
+
+// 12. The Geometrizer: Calculate properties of a circle.
+// a. Store a radius into a variable.
+// b. Calculate the circumference based on the radius, and
+// output “The circumference is NN”.
+// (Hint : Circumference of a circle = 2 π r , π = 3.142)
+// Calculate the area based on the radius, and output “The
+// area is NN”. (Hint : Area of a circle = π r2, π = 3.142)
+
+
+// Ans 12.
+var r = 20;
+var pie = 3.142;
+var circumference = 2 * pie * r;
+var area = pie * (r ** 2);
+
+document.write("Answer 12. <br>");
+document.write(`Radius of circle is ${r}<br>`);
+document.write(`Circumference of circle is ${circumference} <br>`);
+document.write(`area of circle is ${area} <br> <br> <br>`);
+
+
+
+
+
+// 13. The Lifetime Supply Calculator: Ever wonder how
+// much a “lifetime supply” of your favorite snack is?
+// Wonder no more.
+// a. Store your favorite snack into a variable
+// b. Store your current age into a variable.
+// c. Store a maximum age into a variable.
+// d. Store an estimated amount per day (as a number).
+// e. Calculate how many would you eat total for the rest of
+// your life.
+// Output the result to the screen like so: “You will need
+// NNNN to last you until the ripe old age of NN”.
+
+
+
+
+// Ans 13.
+
+var snack = "Cheetos";
+var currentAge = 24;
+var maxAge = 65;
+var numberPerDay = 2;
+
+var total = (maxAge - currentAge) * 365 * 2;
+
+document.write(`Answer 13 : You will need ${total} ${snack} to last you until the ripe old age of ${maxAge} <br> <br>`)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
